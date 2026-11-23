@@ -1,0 +1,4 @@
+from django.urls import path
+from . import views
+app_name='admin_panel'
+urlpatterns=[path('',views.dashboard,name='dashboard'),path('posts/',views.posts,name='posts'),path('posts/<int:pk>/<str:decision>/',views.moderate,name='moderate'),path('users/',views.users,name='users'),path('users/<int:pk>/toggle/',views.toggle_user,name='toggle_user'),path('categories/',views.categories,name='categories'),path('categories/<int:pk>/delete/',views.delete_category,name='delete_category'),path('comments/',views.comments,name='comments'),path('comments/<int:pk>/delete/',views.delete_comment,name='delete_comment'),path('messages/',views.messages_list,name='messages'),path('messages/<int:pk>/toggle/',views.toggle_message,name='toggle_message'),path('messages/<int:pk>/delete/',views.delete_message,name='delete_message')]

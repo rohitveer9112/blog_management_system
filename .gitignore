@@ -1,0 +1,37 @@
+# Virtual Environment
+.venv/
+venv/
+
+# Python Cache
+__pycache__/
+*.py[cod]
+
+# Django Database
+db.sqlite3
+
+# Environment Variables
+.env
+.env.*
+
+# Media Files
+media/*
+!media/.gitkeep
+
+# Log Files
+*.log
+
+# IDE
+.vscode/
+
+# OS Files
+.DS_Store
+Thumbs.db
+
+# Testing
+.coverage
+.pytest_cache/
+
+# Build Files
+build/
+dist/
+*.egg-info/
